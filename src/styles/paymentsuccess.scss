@@ -1,0 +1,42 @@
+@import "color";
+.paymentsuccess {
+  background-color: $pink;
+  width: 100%;
+  min-height: 100vh; /* Use min-height to allow content to grow */
+
+  > main {
+    background-color: #fff;
+    max-width: 900px;
+    background-color: #0da92c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure it takes full width on smaller screens */
+    margin: auto;
+    padding: 2rem;
+
+    > h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem; /* Adjusted for better spacing */
+      font-family: "Roboto";
+      text-transform: uppercase;
+    }
+    > p {
+      font-size: 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      background-color: $red;
+      color: white;
+      margin-top: 0.5rem;
+      padding: 0.5rem 0.5rem;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $reddark;
+      }
+    }
+  }
+}

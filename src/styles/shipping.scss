@@ -57,21 +57,22 @@
           font-size: 1rem;
         }
       }
+      > a {
+        > button {
+          width: 80%;
+          padding: 0.75rem 1rem;
+          font-size: 1.2rem;
+          background-color: $red;
+          color: #fff;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
 
-      > button {
-        width: 80%;
-        padding: 0.75rem 1rem;
-        font-size: 1.2rem;
-        background-color: $red;
-        color: #fff;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-          background-color: darken($red, 10%);
+          &:hover {
+            background-color: darken($red, 10%);
+          }
         }
       }
     }

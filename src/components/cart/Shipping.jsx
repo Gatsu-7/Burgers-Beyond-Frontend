@@ -1,5 +1,6 @@
 import React from "react";
 import { Country, State } from "country-state-city";
+import { Link } from "react-router-dom";
 const Shipping = () => {
   return (
     <section className="shipping">
@@ -46,8 +47,9 @@ const Shipping = () => {
             <label>Phone Number</label>
             <input type="number" placeholder="Enter Phone Number" />
           </div>
-
-          <button type="submit"> Confirm Order </button>
+          <Link to="/confirmorder">
+            <button type="submit"> Confirm Order </button>
+          </Link>
         </form>
       </main>
     </section>
