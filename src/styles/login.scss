@@ -1,0 +1,31 @@
+@import "color";
+.login {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > button {
+    border: none;
+    padding: 1rem 2rem;
+    // margin: 0.5rem 0.5rem;
+    background-color: #fff;
+    color: $lightdark;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    > svg {
+      margin-left: 1.2rem;
+    }
+    &:hover {
+      color: $dark;
+    }
+  }
+}
