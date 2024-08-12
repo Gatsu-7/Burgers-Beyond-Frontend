@@ -1,3 +1,5 @@
+@import "color";
+
 * {
   margin: 0;
   padding: 0;
@@ -11,3 +13,88 @@ a {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.notFound {
+  background-color: $pink;
+  width: 100%;
+  height: 80vh;
+  > main {
+    background-color: #fff;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // gap: 1rem;
+      align-items: center;
+      margin: 3rem;
+
+      > svg {
+        font-size: 4rem;
+      }
+      > h1 {
+        margin-top: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $dark;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font: 300 3rem "Poppins";
+      }
+    }
+    > p {
+      font-size: 1.8rem;
+      background-color: $dark;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    > a {
+      background-color: $red;
+      font-size: 1.5rem;
+      color: white;
+      margin: 3rem;
+      border-radius: 10px;
+      padding: 1rem;
+      &:hover {
+        background-color: $reddark;
+      }
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+  > svg {
+    font-size: 15rem;
+    color: $red;
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+  }
+  > div {
+    font-size: 2rem;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    > p {
+      text-align: center;
+    }
+  }
+}
